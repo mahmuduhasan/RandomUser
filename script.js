@@ -1,5 +1,5 @@
 function createUser(userData) {
-  console.log(userData);
+  //   console.log(userData);
   document.getElementById("user-info").innerHTML = `
           <h4>Name : ${userData.name.title}. ${userData.name.first} ${userData.name.last}</h4>
           <h4>Age : ${userData.dob.age}</h4>
@@ -9,6 +9,9 @@ function createUser(userData) {
           <h4>Address : ${userData.location.street.number}, ${userData.location.street.name}, ${userData.location.city}, ${userData.location.state}, ${userData.location.country} - ${userData.location.postcode}</h4>
           `;
   document.getElementById("user-img").src = `${userData.picture.large}`;
+  userData.gender === "male"
+    ? (document.body.style.backgroundColor = "lightblue")
+    : (document.body.style.backgroundColor = "pink");
 }
 
 function getUser() {
