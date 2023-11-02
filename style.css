@@ -1,0 +1,20 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container,
+.user-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#generate {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
